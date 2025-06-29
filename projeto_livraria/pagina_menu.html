@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Principal</title>
+    <link rel="shortcut icon" href="design_imagens/coffeesbook_icon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="page-body">
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <a href="pagina_home.php" class="logo-link">
+                <img src="design_imagens/coffeesbook_logo.png" width="180" alt="Logo da Livraria">
+            </a>
+            <div class="header-icons">
+                <a href="pagina_login.php" title="Minha Conta">
+                    <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" width="24" height="24"
+                        alt="Minha Conta">
+                </a>
+            </div>
+        </div>
+    </div>
+    <main class="main-container menu-main-center">
+        <section class="menu-section">
+            <div id="titulo">
+                <h1>Menu de Cadastros</h1>
+            </div>
+            <form class="form-admin" name="formulario" method="POST" action="#">
+                <fieldset>
+                    <legend>Opções disponíveis:</legend>
+                    <div class="form-row menu-form-row">
+                        <button type="button" onclick="window.location.href='cad_editora.php'">Editoras</button>
+                        <button type="button" onclick="window.location.href='cad_categoria.php'">Categorias</button>
+                        <button type="button" onclick="window.location.href='cad_autor.php'">Autores</button>
+                        <button type="button" onclick="window.location.href='cad_livro.php'">Livros</button>
+                    </div>
+                </fieldset>
+                <div class="form-actions">
+                    <button type="button" class="menu-voltar-btn"
+                        onclick="window.location.href='pagina_login.php'">Voltar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <p>&copy; 2025 Coffee's Book - All rights reserved. </p>
+    </footer>
+</body>
+
+</html>
